@@ -2,7 +2,7 @@
 
 Report Project 1: Navigation 
 
-Banana Collector:
+* Banana Collector:   
 The environment is a modified version of the Banana Collector Environment from the Unity ML-Agents toolkit. I adopted the Deep Q-learning algorithm to train a banana collector agent. The implementation consists of two classes and one function which are detailed below: 
 
 1. QNetwork in model.py: The Q-network architecture has three hidden fully connected layers (fc1: 64x1, fc2: 64x1, fc3: 16x1, with ReLU activations) and one output layer (with no activation). The input to our network is the agent's state representation (37x1 output of the preprocess step φ), and the output layer outputs 4 q-values for each possible action in the environment.
@@ -12,5 +12,26 @@ The environment is a modified version of the Banana Collector Environment from t
 3. function dqn() in Navigation.ipynb: It runs maximum 1000 episodes to train the network. In each episode, the maximum steps are 1000. The scores and the latest 100 scores are stored, and if the mean score for the lastest 100 episodes is above 13, meaning that this problem has been solved. Then, it stops and saves the trained network to 'model1.pt'. The training scores verse episode are plotted below: 
 
 ![q-learning-process][img_scores_plot]
+
+
+* Besides, the hyperparameters used in the projection are listed below:  
+
+    "stateDim"                  : 37,  
+    "nActions"                  : 4,  
+    "epsilonStart"              : 1.0,  
+    "epsilonEnd"                : 0.01,  
+    "epsilonDecay"              : 0.995,  
+    "lr"                        : 0.0005, # learning rate  
+    "minibatchSize"             : 64,  
+    "learningStartsAt"          : 0,  
+    "learningUpdateFreq"        : 4,  
+    "learningUpdateTargetFreq"  : 4,  
+    "learningMaxSteps"          : 2000,  
+    "replayBufferSize"          : 1e5,  
+    "gamma"                     : 0.99,  # discount_factor  
+    "tau"                       : 0.001, # soft update of target parameters   
+    "seed"                      : 0     
+
+* Finally, in the future, the agent can be improved by using the Prioritized Experience Replay strategy. 
 
 
