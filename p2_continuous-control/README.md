@@ -40,6 +40,13 @@ The barrier for solving the second version of the environment is slightly differ
 
 The environment is considered solved, when the average (over 100 episodes) of those average scores is at least +30. 
 
+### Project Details
+
+- The size of the **state** vector is 33 (per agent) and the space type of the state values is continuous. 
+- The size of the **action** vector is 4 (per agent) and the space type of the action values is continuous. 
+- There are 20 agents, and in each episode, the average of these 20 scores computed by these agents is recorded. 
+- The environment is considered solved, when the average (over 100 episodes) of the recorded scores is larger than 30. 
+
 ### Getting Started
 
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
