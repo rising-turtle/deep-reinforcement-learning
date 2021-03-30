@@ -97,24 +97,22 @@ class Critic(nn.Module):
 ##### &nbsp;
 
 ## Exploration
-For the exploration noise process we used temporally correlated noise in order to explore well in physical environments that have momentum. We used an Ornstein-Uhlenbeck process with θ = 0:15 and σ = 0.1. The Ornstein-Uhlenbeck process models the velocity of a Brownian particle with friction, which results in temporally correlated values centered around
+For the exploration noise process we used temporally correlated noise in order to explore well in physical environments that have momentum. We used an Ornstein-Uhlenbeck process with θ = 0.15 and σ = 0.1. The Ornstein-Uhlenbeck process models the velocity of a Brownian particle with friction, which results in temporally correlated values centered around
 0.
 
 ##### &nbsp;
 
 ## Results
 
-The graph below shows the training process, showing that the moving average score is  at th episode. The complete set of results and steps can be found in [this notebook](Continuous_Control.ipynb).
+The graph below shows the training process, showing the score of each episode (blue) and the moving average (red). It shows that the moving average score is 30 at th episode 50. The complete set of results and steps can be found in [this notebook](Continuous_Control.ipynb).
 
-<img src="assets/results-graph.png" width="70%" align="top-left" alt="" title="Results Graph" />
-
-<img src="assets/output.png" width="100%" align="top-left" alt="" title="Final output" />
+<img src="DDPG_result.PNG" width="70%" align="top-left" alt="" title="Results " />
 
 
 ##### &nbsp;
 
 ## Future Improvements
-- I am out of element here, maybe try the STOA D4PG algorithm [Distributed Distributional Deterministic Policy Gradients (D4PG)](https://arxiv.org/abs/1804.08617).
+- Maybe try the STOA D4PG algorithm [Distributed Distributional Deterministic Policy Gradients (D4PG)](https://arxiv.org/abs/1804.08617).
 
 ##### &nbsp;
 ##### &nbsp;
