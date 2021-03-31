@@ -15,7 +15,7 @@ GAMMA = 0.99            # discount factor
 TAU = 1e-3              # for soft update of target parameters
 LR_ACTOR = 2e-4 #1e-4         # learning rate of the actor 
 LR_CRITIC = 2e-4 # 1e-3        # learning rate of the critic
-WEIGHT_DECAY = 0        # L2 weight decay
+WEIGHT_DECAY = 0 # 0.0001 #0        # L2 weight decay
 LEARN_EVERY_N = 20 # learn every N intervals 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
