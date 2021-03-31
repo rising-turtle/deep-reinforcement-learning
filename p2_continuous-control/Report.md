@@ -104,9 +104,9 @@ For the exploration noise process we used temporally correlated noise in order t
 
 ## Results
 
-The graph below shows the training process, showing the score of each episode (blue) and the moving average (red). It shows that the moving average score is 30 at th episode 50. The complete set of results and steps can be found in [this notebook](Continuous_Control.ipynb).
+The graph below shows the training process, showing the score of each episode (blue) and the moving average (red). It shows that the moving average score is 30 at th episode 63. The complete set of results and steps can be found in [this notebook](Continuous_Control.ipynb).
 
-<img src="DDPG_result.PNG" width="70%" align="top-left" alt="" title="Results " />
+<img src="DDPG_result_new.PNG" width="70%" align="top-left" alt="" title="Results " />
 
 
 ##### &nbsp;
